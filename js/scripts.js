@@ -21,6 +21,24 @@ $(document).ready(function() {
 
   reverse();
 
+var wack = sentence.length / 2;
+
+console.log(wack);
+
+var wackyChar = sentence.charAt(wack);
+
+console.log(wackyChar);
+
+var wacky = function(){
+  console.log(wackyChar + reverse);
+};
+
+var backward = function(){
+  console.log(sentence.split("").reverse().join(""));
+};
+
+backward();
+
 
   // var userInput = function(sentence){
   //   return sentence.chartAt(str.length
