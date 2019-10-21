@@ -1,48 +1,57 @@
 $(document).ready(function() {
+  $("#redPill").click(function(){
+    $("#Red").toggle();
+  });
 
-  var sentence = prompt("Enter a sentence!");
-  var stringLength = sentence.length;
-  var firstChar = sentence.charAt(0);
-  var lastChar = sentence.charAt(stringLength - 1);
+  $("#bluePill").click(function(){
+    $("#Blue").toggle();
+  });
 
-  console.log(stringLength);
-  console.log(firstChar);
-  console.log(lastChar);
+    $("button").click(function(){
+      var sentence = prompt("Enter a sentence!");
+      var stringLength = sentence.length;
+      var firstChar = sentence.charAt(0);
+      var lastChar = sentence.charAt(stringLength - 1);
 
-  var capital = function(sentence){
-    console.log(firstChar.toUpperCase() + lastChar.toUpperCase());
-  };
+      console.log(stringLength);
+      console.log(firstChar);
+      console.log(lastChar);
 
-  capital();
+      var capital = function(sentence){
+        console.log(firstChar.toUpperCase() + lastChar.toUpperCase());
+      };
 
-  var reverse = function(capital){
-    console.log(sentence + lastChar.toUpperCase() + firstChar.toUpperCase());
-  };
+      capital();
 
-  reverse();
+      var reverse = function(capital){
+        console.log(sentence + lastChar.toUpperCase() + firstChar.toUpperCase());
+      };
 
-var wack = sentence.length / 2;
+      reverse();
 
-console.log(wack);
+    var wack = sentence.length / 2;
 
-var wackyChar = sentence.charAt(wack);
+    console.log(wack);
 
-console.log(wackyChar);
+    var wackyChar = sentence.charAt(wack);
 
-var wacky = function(){
-  console.log(wackyChar + reverse);
-};
+    console.log(wackyChar);
 
-var backward = function(){
-  console.log(sentence.split("").reverse().join(""));
-};
+    var wacky = function(){
+      console.log(wackyChar + reverse);
+    };
 
-backward();
+    var backward = function(){
+      console.log(sentence.split("").reverse().join(""));
+    };
+
+    backward();
 
 
-  // var userInput = function(sentence){
-  //   return sentence.chartAt(str.length
-  //
-  //
-  // });
+      // var userInput = function(sentence){
+      //   return sentence.chartAt(str.length
+      //
+      //
+      // });
+    });
 });

@@ -1,0 +1,15 @@
+p {
+  display: none;
+}
+
+#Red{
+  color: red;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#Blue{
+  color:blue;
+  font-size: 35px;
+  font-weight: bold;
+}
